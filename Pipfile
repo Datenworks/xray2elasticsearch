@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+boto3 = "==1.12.47"
+autopep8 = "*"
+flake8 = "*"
+
+[packages]
+elasticsearch = "==7.6.0"
+requests-aws4auth = "==1.0"
+requests = "2.24.0"
+
+[requires]
+python_version = "3.7"
