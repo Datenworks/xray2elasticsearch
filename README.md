@@ -30,10 +30,10 @@ make DEPLOYMENT_BUCKET="" ES_HOST="" ES_INDEX="" SQS_QUEUE_NAME="" deploy
 
 - Required variables:
 
-  - ES_HOST: The endpoint of elasticsearch
-  - DEPLOYMENT_BUCKET: The aws bucket where the code will be stored
+  - ```ES_HOST```: The endpoint of elasticsearch
+  - ```DEPLOYMENT_BUCKET```: The aws bucket where the code will be stored
 
-- OPTIONAL
-  - ES_INDEX: THE NAME OF INDEX (OPTIONAL: IF NOT PROVIDED WILL BE xray-yyyy-mm-dd), the date part is default by the application
-  - SQS_QUEUE_NAME: The name of SQS Queue, DEFAULT=xray-to-elasticsearch-delivery
+- Optional
+  - ```ES_INDEX```: THE NAME OF INDEX (OPTIONAL: IF NOT PROVIDED WILL BE xray-yyyy-mm-dd), the date part is default by the application
+  - ```SQS_QUEUE_NAME```: The name of SQS Queue, DEFAULT=xray-to-elasticsearch-delivery
     You can edit the Makefile variable SQS_QUEUE_NAME for other one of your choice!
